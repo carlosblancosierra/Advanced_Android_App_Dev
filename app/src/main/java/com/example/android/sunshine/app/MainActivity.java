@@ -71,7 +71,7 @@ public class MainActivity extends ActionBarActivity implements ForecastFragment.
 
         SunshineSyncAdapter.initializeSyncAdapter(this);
 
-        if (!checkPlayServices()) {
+        if (checkPlayServices()) {
             // This is where we could either prompt a user that they should install
             // the latest version of Google Play Services, or add an error snackbar
             // that some features won't be available.
